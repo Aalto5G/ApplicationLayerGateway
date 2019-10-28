@@ -1,0 +1,9 @@
+[Unit]
+Description=Applicarion Layer Gateway
+
+[Service]
+ExecStart=/usr/bin/python3 /home/ubuntu/applicationlayergateway/src/alg.py
+
+
+[Install]
+WantedBy=multi-user.target

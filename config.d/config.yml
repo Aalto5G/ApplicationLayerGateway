@@ -1,0 +1,68 @@
+Log:
+  log_filename: 'Logging.txt'
+  log_level: 1 #INFO
+  log_filesize: 10485760
+
+Timeout:
+  Socket_Tiemout: 0.1
+  Connection_Timeout: 2
+
+Ports:
+  - 80
+  - 8080
+  - 443
+  - 8443
+
+
+HOSTNAME_TO_IP_LOOKUP_TABLE:
+  "www.test.gwa.demo:80" :
+        fqdn:   'test.gwa.demo'
+        addr:   '192.168.0.100'
+        port:     80
+
+  "www.test.gwa.demo:443" :
+        fqdn:   'test.gwa.demo'
+        addr:   '192.168.0.100'
+        port:     443
+
+  "test.gwa.demo:80" :
+        fqdn:   'test.gwa.demo'
+        addr:   '192.168.0.100'
+        port:     80
+
+  "test.gwa.demo:443" :
+        fqdn:   'test.gwa.demo'
+        addr:   '192.168.0.100'
+        port:     443
+
+  "www.test.gwb.demo:80" :
+        fqdn:   'test.gwb.demo'
+        addr:   '192.168.0.100'
+        port:     80
+
+  "www.test.gwb.demo:443" :
+        fqdn:   'test.gwb.demo'
+        addr:   '192.168.0.100'
+        port:     443
+
+  "www.test103.gwa.demo:443" :
+        fqdn:   'test103.gwa.demo'
+        addr:   '192.168.0.103'
+        port:     443
+
+  "test103.gwa.demo:80" :
+        fqdn:   'test103.gwa.demo'
+        addr:   '192.168.0.103'
+        port:     80
+
+  "test.gwb.demo:80" :
+        fqdn:   'test.gwb.demo'
+        addr:   '192.168.0.100'
+        port:     80
+
+  "test.gwb.demo:443" :
+        fqdn:   'test.gwb.demo'
+        addr:   '192.168.0.100'
+        port:     443
+
+

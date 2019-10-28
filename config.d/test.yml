@@ -1,0 +1,21 @@
+Log:
+  log_filename: 'Logging.txt'
+  log_level: 1 #INFO
+  log_filesize: 10485
+
+Timeout:
+  Socket_Tiemout: 0.1
+  Connection_Timeout: 2
+
+Ports:
+  - 8000
+
+HOSTNAME_TO_IP_LOOKUP_TABLE:
+  "localhost:8000" :
+        fqdn:   'localhost'
+        addr:   '127.0.0.1'
+        port:     8001
+
+
+
+
